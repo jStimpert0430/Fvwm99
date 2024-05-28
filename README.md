@@ -1,4 +1,6 @@
-# Fvwm99
-Fvwm99 is a standalone port of the theme found in my main Fvwm theme engine package, Fvwm-StarterKit(https://github.com/jStimpert0430/fvwm-StarterKit). It is a windows NT/Windows classic era theme for Fvwm featuring a familiar and easy to use desktop environment with a few unique Fvwm extra features added for functionality. Includes a built in core of the full version theme engine which carries with it a lot of the same modular dynamic functionality. (Dynamic modules, styling, and colorsets). 
+# Fvwm99 - Professional Edition
+Fvwm99 is a standalone port of the theme found in my main Fvwm theme engine package, Fvwm-StarterKit(https://github.com/jStimpert0430/fvwm-StarterKit). It is an early windows NT/Windows classic era theme for Fvwm featuring a familiar and easy to use desktop environment with a few unique Fvwm extra features added for functionality. Includes a built in core of the full version of the Fvwm-StarterKit theme engine and carries with it a lot of the same modular dynamic functionality. (Dynamic modules, styling, and colorsets).
 
 ![Preview](extras/Screenshots/screenshot.png?raw=true "Preview Screenshot")
+
+This is still slightly a WIP but the base of the theme is present. It's given me a oppurtunity to really identify what the core of my bigger theme engine actually is and piece out and seperate that completely from the individual theme engine implementation, as well figure out how to use that engine to publish a more focused theme for those who maybe don't want the whole environment and just one particular theme from the package.  
