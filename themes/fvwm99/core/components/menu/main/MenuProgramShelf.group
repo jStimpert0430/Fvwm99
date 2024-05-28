@@ -1,0 +1,7 @@
+DestroyMenu MenuProgramShelf
+AddToMenu $[InfoStore.targetMenu]
++ "&FileManager%$[InfoStore.iconsDirectory]/win2k/system/16/home.png%" Exec exec $[infostore.filemanager]
++ "&Internet%$[InfoStore.iconsDirectory]/win2k/applications/16/firefox2.png%" Exec exec $[infostore.browser]
++ "&TextEditor%$[InfoStore.iconsDirectory]/win2k/system/16/text.xpm%" Exec exec $[infostore.textEditor]
++ "&Terminal%$[InfoStore.iconsDirectory]/win2k/system/16/terminal.png%" Exec exec $[infostore.terminal]
++ "" Nop

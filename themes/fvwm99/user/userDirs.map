@@ -1,0 +1,19 @@
+#root and config
+InfoStoreAdd configUserDirectory $[InfoStore.themeUserRootDirectory]/config
+#component directories
+InfoStoreAdd componentUserDirectory $[InfoStore.themeUserRootDirectory]/components
+InfoStoreAdd menuUserDirectory $[InfoStore.componentUserDirectory]/menu
+InfoStoreAdd functionsUserDirectory $[InfoStore.componentUserDirectory]/functions
+InfoStoreAdd taskbarUserDirectory $[InfoStore.componentUserDirectory]/taskbar
+InfoStoreAdd pagerUserDirectory $[InfoStore.componentUserDirectory]/pager
+InfoStoreAdd systemUserDirectory $[InfoStore.componentUserDirectory]/system
+InfoStoreAdd miscModulesUserDirectory $[InfoStore.componentUserDirectory]/misc
+#theme directories
+InfoStoreAdd themesUserDirectory $[InfoStore.themeUserRootDirectory]/themes
+InfoStoreAdd colorsetUserDirectory $[InfoStore.themesUserDirectory]/colorsets
+InfoStoreAdd stylesUserDirectory $[InfoStore.themesUserDirectory]/styles
+InfoStoreAdd iconsUserDirectory $[InfoStore.themesUserDirectory]/icons
+InfoStoreAdd bgUserDirectory $[InfoStore.themesUserDirectory]/bg
+InfoStoreAdd bgUserFilledDirectory $[InfoStore.bgUserDirectory]/filled
+InfoStoreAdd bgUserTiledDirectory $[InfoStore.bgUserDirectory]/tiled
+InfoStoreAdd bgUserCenteredDirectory $[InfoStore.bgUserDirectory]/center

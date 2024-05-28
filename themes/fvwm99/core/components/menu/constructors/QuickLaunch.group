@@ -1,0 +1,11 @@
+DestroyMenu QuickLaunchMenu
+AddToMenu   QuickLaunchMenu "Programs" Title
+Test (x firefox) + "&Firefox%themes/Fvwm-StarterKit/icons/firefox.png%" Exec exec firefox
+Test (x firefox) + "&Steam%themes/Fvwm-StarterKit/icons/firefox.png%" Exec exec firefox
+Test (x firefox) + "&Discord%themes/Fvwm-StarterKit/icons/firefox.png%" Exec exec firefox
+Test (x firefox) + "&Retroarch%themes/Fvwm-StarterKit/icons/firefox.png%" Exec exec firefox
+Test (x firefox) + "&Blender%themes/Fvwm-StarterKit/icons/firefox.png%" Exec exec firefox
+Test (x gvim) + "gVim" Exec exec gvim
+Test (x xemacs) + "XEmacs" Exec exec xemacs
+Test (x gimp) + "Gimp" Exec exec gimp
+Test (x vlc) + "VLC" Exec exec vlc

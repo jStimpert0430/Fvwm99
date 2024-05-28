@@ -1,0 +1,41 @@
+Test (f $[InfoStore.themeWindowDecorDir]/buttons/win2k.buttons) Read $[InfoStore.themeWindowDecorDir]/buttons/win2k.buttons
+
+InfoStoreAdd ButtonIconDirectory $[InfoStore.themeStyleDir]/assets/buttons
+
+AddToDecor Win2kDecor
++ TitleStyle AllInactive HGradient 128 #797a7a #aeaeae
++ TitleStyle Active      HGradient 128 #001b65 #a4c8ee
++ ButtonStyle All Simple -- UseTitleStyle
++ AddButtonStyle Left   AllInactive Solid #797a7a
++ AddButtonStyle Right   AllInactive Solid #aeaeae
++ AddButtonStyle Left  AllActive   Solid #001b65
++ AddButtonStyle Right AllActive   Solid #a4c8ee
++ BorderStyle Simple -- HiddenHandles NoInset Raised
++ TitleStyle      LeftJustified
++ TitleStyle      -- Flat
++ ButtonStyle     All -- Flat
++ AddButtonStyle 1 MiniIcon
++ AddButtonStyle 2 ActiveUp   Pixmap $[InfoStore.ButtonIconDirectory]/close.png
++ AddButtonStyle 2 ActiveDown Pixmap $[InfoStore.ButtonIconDirectory]/win-window-close-pressed.png
++ AddButtonStyle 2 Inactive   Pixmap $[InfoStore.ButtonIconDirectory]/close.png
++ AddButtonStyle 4 ActiveUp   Pixmap $[InfoStore.ButtonIconDirectory]/maximize.png
++ AddButtonStyle 4 ActiveDown Pixmap $[InfoStore.ButtonIconDirectory]/win-window-maximize-pressed.png
++ AddButtonStyle 4 Inactive   Pixmap $[InfoStore.ButtonIconDirectory]/maximize.png
++ AddButtonStyle 6 ActiveUp   Pixmap $[InfoStore.ButtonIconDirectory]/minimize.png -- Right flat
++ AddButtonStyle 6 ActiveDown Pixmap $[InfoStore.ButtonIconDirectory]/win-window-iconify-pressed.png -- Right flat
++ AddButtonStyle 6 Inactive   Pixmap $[InfoStore.ButtonIconDirectory]/minimize.png -- Right flat
++ AddButtonStyle 4 ToggledActiveUp   Pixmap $[InfoStore.ButtonIconDirectory]/win-window-restore.png
++ AddButtonStyle 4 ToggledActiveDown Pixmap $[InfoStore.ButtonIconDirectory]/win-window-restore-pressed.png
++ AddButtonStyle 4 ToggledInactive   Pixmap $[InfoStore.ButtonIconDirectory]/win-window-restore.png
++ ButtonStyle All - Clear
++ ButtonStyle 1 - MwmDecorMenu
++ ButtonStyle 6 - MwmDecorMin
++ ButtonStyle 4 - MwmDecorMax
++ TitleStyle Height 18
+
+
+Style * Colorset 0, HilightColorset 2, \
+        BorderColorset 3, HilightBorderColorset 4, \
+        BorderWidth 4, HandleWidth 4, \
+        FvwmBorder, FirmBorder, \
+        MWMButtons, UseDecor Win2kDecor

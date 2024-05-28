@@ -1,0 +1,4 @@
+
+Read $[InfoStore.colorsetDirectory]/win2k/win2k.colors
+Read $[InfoStore.stylesDirectory]/win2k.style
+Exec exec feh --bg-fill $[InfoStore.defaultBGPath]

@@ -1,0 +1,20 @@
+#root and config
+InfoStoreAdd configDirectory $[FVWM_USERDIR]/themes/fvwm99/core/config
+#component directories
+InfoStoreAdd componentDirectory $[FVWM_USERDIR]/themes/fvwm99/core/components
+InfoStoreAdd menuDirectory $[InfoStore.componentDirectory]/menu
+InfoStoreAdd functionsDirectory $[InfoStore.componentDirectory]/functions
+InfoStoreAdd taskbarDirectory $[InfoStore.componentDirectory]/taskbar
+InfoStoreAdd pagerDirectory $[InfoStore.componentDirectory]/pager
+InfoStoreAdd systemDirectory $[InfoStore.componentDirectory]/system
+InfoStoreAdd miscModulesDirectory $[InfoStore.componentDirectory]/misc
+#theme directories
+InfoStoreAdd themesDirectory $[FVWM_USERDIR]/themes/fvwm99/core/themes
+InfoStoreAdd colorsetDirectory $[InfoStore.themesDirectory]/colorsets
+InfoStoreAdd stylesDirectory $[InfoStore.themesDirectory]/styles
+InfoStoreAdd iconsDirectory $[InfoStore.themesDirectory]/icons
+InfoStoreAdd globalDecorDir $[InfoStore.stylesDirectory]/global/decor
+InfoStoreAdd bgDirectory $[InfoStore.themesDirectory]/bg
+InfoStoreAdd bgFilledDirectory $[InfoStore.bgDirectory]/filled
+InfoStoreAdd bgTiledDirectory $[InfoStore.bgDirectory]/tiled
+InfoStoreAdd bgCenteredDirectory $[InfoStore.bgDirectory]/center
