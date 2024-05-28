@@ -20,6 +20,6 @@ Fvwm99 is an early windows NT/Windows classic era theme for Fvwm featuring a fam
 
 Fvwm99 is a standalone port of the theme found in my main Fvwm theme engine package, Fvwm-StarterKit(https://github.com/jStimpert0430/fvwm-StarterKit) for those who are simply interested in a feature rich Win2k theme for Fvwm, and maybe not the entire themeset and toolkit provided by the full vertsion. 
 
-This theme includes and runs on a built in core of the Fvwm-StarterKit theme engine and carries with it a lot of the same modular dynamic functionality. (Dynamic modules, styling, and colorsets).
+This theme includes and runs on a built in core of the Fvwm-StarterKit theme engine and carries with it a lot of the same modular dynamic functionality. (Dynamic modules, styling, and colorsets, scrolling desktop).
 
  If you are interested in more themes. Please consider checking out the main project, It includes this theme and a galaxy of other choices and the toolkits to build your own.
