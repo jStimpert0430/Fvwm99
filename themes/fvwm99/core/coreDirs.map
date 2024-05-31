@@ -1,6 +1,11 @@
-#root and config
+####################################
+#Fvwm99 core directory mapping file#
+####################################
+
+#Config
 InfoStoreAdd configDirectory $[FVWM_USERDIR]/themes/fvwm99/core/config
-#component directories
+
+#Component directories
 InfoStoreAdd componentDirectory $[FVWM_USERDIR]/themes/fvwm99/core/components
 InfoStoreAdd menuDirectory $[InfoStore.componentDirectory]/menu
 InfoStoreAdd functionsDirectory $[InfoStore.componentDirectory]/functions
@@ -8,11 +13,14 @@ InfoStoreAdd taskbarDirectory $[InfoStore.componentDirectory]/taskbar
 InfoStoreAdd pagerDirectory $[InfoStore.componentDirectory]/pager
 InfoStoreAdd systemDirectory $[InfoStore.componentDirectory]/system
 InfoStoreAdd miscModulesDirectory $[InfoStore.componentDirectory]/misc
-#theme directories
+
+#Theme directories
 InfoStoreAdd themesDirectory $[FVWM_USERDIR]/themes/fvwm99/core/themes
 InfoStoreAdd colorsetDirectory $[InfoStore.themesDirectory]/colorsets
 InfoStoreAdd stylesDirectory $[InfoStore.themesDirectory]/styles
 InfoStoreAdd iconsDirectory $[InfoStore.themesDirectory]/icons
+InfoStoreAdd fontsetDirectory $[InfoStore.themesDirectory]/fontsets
+InfoStoreAdd envRulesDirectory $[InfoStore.themesDirectory]/env-rules
 InfoStoreAdd globalDecorDir $[InfoStore.stylesDirectory]/global/decor
 InfoStoreAdd bgDirectory $[InfoStore.themesDirectory]/bg
 InfoStoreAdd bgFilledDirectory $[InfoStore.bgDirectory]/$[InfoStore.targetThemeName]/filled

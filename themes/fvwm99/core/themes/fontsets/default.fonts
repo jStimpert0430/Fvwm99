@@ -1,0 +1,10 @@
+InfoStoreAdd defaultFont "xft:MSW98UI-Bold:bold:pixelsize=11:antialias=false"
+InfoStoreAdd titlebarFont $[InfoStore.defaultFont]
+InfoStoreAdd menuFont $[InfoStore.defaultFont]
+InfoStoreAdd startMenuFont $[InfoStore.defaultFont]
+InfoStoreAdd startButtonFont $[InfoStore.defaultFont]
+InfoStoreAdd taskbarIconsFont $[InfoStore.defaultFont]
+InfoStoreAdd clockFont $[InfoStore.defaultFont]
+InfoStoreAdd extraFont1 $[InfoStore.defaultFont]
+InfoStoreAdd extraFont2 $[InfoStore.defaultFont]
+InfoStoreAdd extraFont3 $[InfoStore.defaultFont]
