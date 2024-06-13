@@ -1,5 +1,7 @@
-#Default theme paths
+#Fvwm99 style for Fvwm-StarterKit
+#By TofuShop
 
+#Default theme paths
 InfoStoreAdd themeName win2k
 InfoStoreAdd themeStyleDir $[InfoStore.stylesDirectory]/$[InfoStore.themeName]
 InfoStoreAdd themeIconDir $[InfoStore.iconsDirectory]/$[InfoStore.themeName]
@@ -7,24 +9,18 @@ InfoStoreAdd themeColorsetDir $[InfoStore.colorsetsDirectory]/$[InfoStore.themeN
 InfoStoreAdd themeBGDir $[InfoStore.bgDirectory]/$[InfoStore.themeName]
 InfoStoreAdd themeDecorDir $[InfoStore.themeStyleDir]/decor
 InfoStoreAdd themeWindowDecorDir $[InfoStore.themeDecorDir]/windows
+InfoStoreAdd themeTaskbarDecorDir $[InfoStore.themeDecorDir]/taskbar
 
+
+#Load Window Decor
 Test (f $[InfoStore.themeWindowDecorDir]/win2k.decor) Read $[InfoStore.themeWindowDecorDir]/win2k.decor
-Read $[InfoStore.taskbarDirectory]/win2kTaskbar.conf
 
-Style *FvwmTaskBar !Title, !Handles, WindowListSkip, MWMBorder, FirmBorder, BorderWidth 3, HandleWidth 5, UseDecor Win2kDecor, BorderColorset 0, Colorset 0, \
-                  StaysOnTop, Sticky, NeverFocus
+#Load TaskbarDecor
+Test (f $[InfoStore.themeTaskbarDecorDir]/fvwm99bar.decor) Read $[InfoStore.themeTaskbarDecorDir]/fvwm99bar.decor
 
-KillModule FvwmPager
-Style "TofuPager" NoTitle, !Handles, Borders, BorderWidth 6, BorderColorset 1, Sticky, WindowListSkip, FixedSize, StayOnTop
+#Load Menu Decor
+Test (f $[InfoStore.globalDecorDir]/menu/tofumenu.decor) Read $[InfoStore.globalDecorDir]/menu/tofumenu.decor
 
-MenuStyle * Win
-MenuStyle * MenuColorset 5, ActiveColorset 6, GreyedColorset 7, TitleColorset 8
-MenuStyle * HilightTitleBack, SeparatorsLong
-MenuStyle * TrianglesSolid, TrianglesUseFore
-MenuStyle * ItemFormat "%|%3.1i%5.3l%5.3>%|"
-MenuStyle * Font "xft:Windows-Regular:size=9:antialias=False"
-MenuStyle * MenuColorset #aaaaaa
-MenuStyle * ActiveFore White
-
+#Load FvwmScript Decor
 Style *FvwmScript Colorset 0
 

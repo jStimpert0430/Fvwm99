@@ -1,7 +1,7 @@
-WindowTitle {System Information}
-WindowSize  600 400
-BackColor {#dcdad5}
-Font "default:style=Bold:size=10"
+WindowTitle {System Properties}
+WindowSize  410 440
+BackColor {#d4d0c8}
+Font "xft:MSW98UI-Bold:pixelsize=11:antialias=false"
 Init
  Begin
  End
@@ -9,9 +9,9 @@ Init
 Widget 1
 Property
  Title {}
- Icon themes/Fvwm-StarterKit/icons/banner.fvwm_red_3D.xpm
- Size  260 110
- Position 150 30
+ Icon themes/fvwm99/core/themes/icons/winPanel.png
+ Size  160 110
+ Position 35 70
  Type ItemDraw
  Flags NoReliefString
 Main
@@ -23,9 +23,9 @@ End
 
 Widget 2
 Property
- Title {Ver. 2.7.0}
- Size  60 30
- Position 350 90
+ Title { bunta@TofuShop }
+ Size  80 15
+ Position 250 5
  Type ItemDraw
  Flags NoReliefString
 Main
@@ -38,8 +38,8 @@ End
 Widget 3
 Property
  Title {}
- Size  400 200
- Position 90 165
+ Size  390 390
+ Position 10 10
  Type Rectangle
   ShadowColor {#222222}
   HilightColor {#FFFFFF}
@@ -53,9 +53,9 @@ End
 
 Widget 4
 Property
- Title { bunta@TofuShop }
- Size  80 30
- Position 100 150
+ Title { System: }
+ Size  80 15
+ Position 190 50
  Type ItemDraw
  Flags NoReliefString
 Main
@@ -64,5 +64,255 @@ Main
   Begin
   End
 End
+
+Widget 5
+Property
+ Title { Arch Linux x86_64 }
+ Size  100 15
+ Position 225 70
+ Type ItemDraw
+ Flags NoReliefString
+Main
+ Case message of
+  SingleClic :
+  Begin
+  End
+End
+
+Widget 6
+Property
+ Title { 6.9.3-arch1-1 }
+ Size  70 15
+ Position 225 90
+ Type ItemDraw
+ Flags NoReliefString
+Main
+ Case message of
+  SingleClic :
+  Begin
+  End
+End
+
+Widget 7
+Property
+ Title { 836 Packages Installed }
+ Size  123 15
+ Position 225 110
+ Type ItemDraw
+ Flags NoReliefString
+Main
+ Case message of
+  SingleClic :
+  Begin
+  End
+End
+
+Widget 8
+Property
+ Title { Registered to: }
+ Size  110 15
+ Position 190 140
+ Type ItemDraw
+ Flags NoReliefString
+Main
+ Case message of
+  SingleClic :
+  Begin
+  End
+End
+
+Widget 9
+Property
+ Title { bunta@TofuShop }
+ Size  100 15
+ Position 225 160
+ Type ItemDraw
+ Flags NoReliefString
+Main
+ Case message of
+  SingleClic :
+  Begin
+  End
+End
+
+Widget 10
+Property
+ Title { 51873-005-1829143-09571 }
+ Size  140 15
+ Position 225 180
+ Type ItemDraw
+ Flags NoReliefString
+Main
+ Case message of
+  SingleClic :
+  Begin
+  End
+End
+
+Widget 11
+Property
+ Title { Computer:  }
+ Size  100 15
+ Position 190 210
+ Type ItemDraw
+ Flags NoReliefString
+Main
+ Case message of
+  SingleClic :
+  Begin
+  End
+End
+
+Widget 12
+Property
+ Title { CPU: Intel i7-12700KF }
+ Size  120 15
+ Position 225 230
+ Type ItemDraw
+ Flags NoReliefString
+Main
+ Case message of
+  SingleClic :
+  Begin
+  End
+End
+
+Widget 13
+Property
+ Title { GPU: GeForce RTX 4070ti }
+ Size  143 15
+ Position 225 250
+ Type ItemDraw
+ Flags NoReliefString
+Main
+ Case message of
+  SingleClic :
+  Begin
+  End
+End
+
+Widget 14
+Property
+ Title { RAM: 706MiB / 31,905MiB }
+ Size  140 15
+ Position 225 270
+ Type ItemDraw
+ Flags NoReliefString
+Main
+ Case message of
+  SingleClic :
+  Begin
+  End
+End
+
+Widget 15
+Property
+ Title { Storage: Samsung 970 Evo (x2)}
+ Size  164 15
+ Position 225 310
+ Type ItemDraw
+ Flags NoReliefString
+Main
+ Case message of
+  SingleClic :
+  Begin
+  End
+End
+
+Widget 16
+Property
+ Title { /home: 578.0 GiB / 915.8 GiB}
+ Size  149 15
+ Position 225 330
+ Type ItemDraw
+ Flags NoReliefString
+Main
+ Case message of
+  SingleClic :
+  Begin
+  End
+End
+
+Widget 17
+Property
+ Title { /root: 851.1 GiB / 914.8 GiB}
+ Size  139 15
+ Position 225 350
+ Type ItemDraw
+ Flags NoReliefString
+Main
+ Case message of
+  SingleClic :
+  Begin
+  End
+End
+
+Widget 18
+Property
+ Title { Display: 2560x1440@165hz}
+ Size  145 15
+ Position 225 290
+ Type ItemDraw
+ Flags NoReliefString
+Main
+ Case message of
+  SingleClic :
+  Begin
+  End
+End
+
+Widget 19
+Property
+ Title {OK}
+ Size 75 12
+ Position 165 405
+ Flags NoReliefString
+  BackColor {#d4d0c8}
+  ShadowColor {#222222}
+ Type PushButton
+ Value 1
+Main
+ Case message of
+  SingleClic :
+  Begin
+   Quit
+  End
+End
+
+Widget 20
+Property
+ Title {Cancel}
+ Size 75 12
+ Position 245 405
+ Flags NoReliefString
+  BackColor {#d4d0c8}
+  ShadowColor {#222222}
+ Type PushButton
+ Value 1
+Main
+ Case message of
+  SingleClic :
+  Begin
+   Quit
+  End
+End
+
+#Widget 21
+#Property
+ #Title {Apply}
+ #Size 75 12
+ #Position 325 405
+ #Flags NoReliefString
+  #BackColor {#d4d0c8}
+  #ShadowColor {#222222}
+ #Type PushButton
+ #Value 1
+#Main
+ #Case message of
+  #SingleClic :
+  #Begin
+   #Quit
+  #End
+#End
 
 

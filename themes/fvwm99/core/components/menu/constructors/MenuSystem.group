@@ -11,7 +11,7 @@ AddToMenu   MenuSystem "System" Title
 + "&Appearance%themes/Fvwm-StarterKit/icons/wallpaper.png%" Popup AppearanceMenu
 + "&Themes%themes/Fvwm-StarterKit/icons/wallpaper.png%" Popup ThemeMenu
 + "" Nop
-+ "&System Info%themes/Fvwm-StarterKit/icons/terminal-flat.png%" Module FvwmScript /home/bunta/.fvwm/themes/Fvwm-StarterKit/components/system/SysInfo.sys
++ "&System Info%themes/Fvwm-StarterKit/icons/terminal-flat.png%" Module FvwmScript /home/bunta/.fvwm/themes/fvwm99/core/components/system/SysInfo.sys
 + "Copy Config%themes/Fvwm-StarterKit/icons/conf.xpm%" FvwmScript FvwmScript-ConfirmCopyConfig
 + "&Help%themes/Fvwm-StarterKit/icons/help.xpm%" Popup MenuManPages
 + "" Nop

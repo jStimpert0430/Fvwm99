@@ -1,8 +1,11 @@
-Test (f $[InfoStore.themeDecorDir]/windows/buttons/win2k.buttons) Read $[InfoStore.themeDecorDir]/windows/buttons/win2k.buttons
 
+#Load and set window buttons arrangement/input
+Test (f $[InfoStore.themeDecorDir]/windows/buttons/win2k.buttons) Read $[InfoStore.themeDecorDir]/windows/buttons/win2k.buttons
 InfoStoreAdd ButtonIconDirectory $[InfoStore.themeStyleDir]/assets/buttons
 
+#Create theme decor
 AddToDecor Win2kDecor
+#TODO: Add gradient colorsets for Fvwm99
 + TitleStyle AllInactive HGradient 128 #797a7a #aeaeae
 + TitleStyle Active      HGradient 128 #001b65 #a4c8ee
 + ButtonStyle All Simple -- UseTitleStyle
@@ -13,6 +16,7 @@ AddToDecor Win2kDecor
 + BorderStyle Simple -- HiddenHandles NoInset Raised
 + TitleStyle      LeftJustified
 + TitleStyle      -- Flat
++ TitleStyle      -- Padding 0 22
 + ButtonStyle     All -- Flat
 + AddButtonStyle 1 MiniIcon
 + AddButtonStyle 2 ActiveUp   Pixmap $[InfoStore.ButtonIconDirectory]/close.png
@@ -33,7 +37,7 @@ AddToDecor Win2kDecor
 + ButtonStyle 4 - MwmDecorMax
 + TitleStyle Height 18
 
-
+#Set Style and theme decor - TODO: maybe move this to base style file since it is indeed a style
 Style * Colorset 0, HilightColorset 2, \
         BorderColorset 3, HilightBorderColorset 4, \
         BorderWidth 4, HandleWidth 4, \

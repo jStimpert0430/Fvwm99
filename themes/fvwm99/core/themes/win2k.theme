@@ -1,4 +1,28 @@
+#Fvwm99 Theme for Fvwm-StarterKit
+#By TofuShop
 
+#Load Theme Colorset
 Read $[InfoStore.colorsetDirectory]/win2k/win2k.colors
+
+#Load Theme Taskbar
+Read $[InfoStore.taskbarDirectory]/win2kTaskbar.conf
+
+#Load Theme Pager
+KillModule FvwmPager
+Style "TofuPager" NoTitle, !Handles, Borders, BorderWidth 6, BorderColorset 1, Sticky, WindowListSkip, FixedSize, StayOnTop
+
+#Set Env
+$[InfoStore.defaultEdgeRule]
+$[InfoStore.defaultDeskScrollRule]
+$[InfoStore.defaultFocusRule]
+
+#Load OtherComponents
+
+#Set fonts?
+
+#Load Style
 Read $[InfoStore.stylesDirectory]/win2k.style
+
+
+#Load BG
 Exec exec feh --bg-fill $[InfoStore.defaultBGPath]
